@@ -40,11 +40,18 @@ To get you started, this repo was created to include two development environment
 
 - The "backend" folder contains a Node, Express, Redis template.
 
-You can initialize this repo following these steps:
+###### You can initialize this repo following these steps:
+
+**_VERY IMPORTANT_**
 
 1. Ensure you have above packages installed
 2. Clone the repo: `git clone git@github.com:Vendrix-Inc/technical-challenge-2022.git`
 3. Open the repo in VS Code
+4. Create your own public repo under your Github account with the name `${firstName}-${lastName}-vendrix-technical-challenge`
+5. Copy content of the newly cloned Vendrix technical challenge into your newly created repo for submission.
+6. Complete the challenge as described, committing your work often.
+   _when ready to submit_
+7. Email the Vendrix team to notify your submission with a link to your GitHub repo.
 
 <br>
 
@@ -115,10 +122,9 @@ The goal of the second phase is to implement the missing endpoint as described i
 
 # Submission
 
-- **_DO NOT_** host your project on a public repository.
+**_! ATTENTION !_**
 
-1. Clone repo
-2.
+- **_DO NOT_** host your project on a public repository.
 
 - Please follow the instructions provided in the invitation for submitting your work.
 
