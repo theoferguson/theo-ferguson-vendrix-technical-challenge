@@ -5,6 +5,7 @@
 1. Open a terminal in the "backend" folder
 2. Install the dependencies for the "backend" folder: `yarn`
 3. Start the server: `yarn dev`
+   -If you get a connection refused error, you might have to manually start your local redis server.
 
 This guide is an example of how to develop a function in Typescript with
 the Google Cloud Functions Framework with Debugging.
