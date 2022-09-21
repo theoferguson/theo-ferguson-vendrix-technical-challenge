@@ -48,10 +48,14 @@ To get you started, this repo was created to include two development environment
 2. Clone (do not fork) the repo: `git clone git@github.com:Vendrix-Inc/technical-challenge-2022.git`
 3. Open the repo in VS Code
 4. Create your own public repo under your Github account with the name `${firstName}-${lastName}-vendrix-technical-challenge`
-5. Copy content of the newly cloned Vendrix technical challenge into your newly created repo for submission.
-6. Complete the challenge as described, committing your work often.
+5. Add your newly created git hub repository as a remote `git remote add origin https://github.com/user/repo.git`
+6. Verify new remote is added `git remote -v`
+   > origin https://github.com/user/repo.git (fetch)
+   > origin https://github.com/user/repo.git (push)
+7. Push the repository to the newly added remote (your github account) `git push --mirror origin`
+8. Complete the challenge as described, committing your work often.
    _when ready to submit_
-7. Email the Vendrix team to notify your submission with a link to your GitHub repo.
+9. Email the Vendrix team to notify your submission with a link to your GitHub repo.
 
 <br>
 
