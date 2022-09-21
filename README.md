@@ -43,7 +43,7 @@ To get you started, this repo was created to include two development environment
 You can initialize this repo following these steps:
 
 1. Ensure you have above packages installed
-2. Clone the repo: `git clone git@github.com:Vendrix-Inc/technical-challenge.git`
+2. Clone the repo: `git clone git@github.com:Vendrix-Inc/technical-challenge-2022.git`
 3. Open the repo in VS Code
 
 <br>
