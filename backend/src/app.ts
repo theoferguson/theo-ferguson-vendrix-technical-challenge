@@ -68,6 +68,8 @@ app.use('/', async (req: Request, res: Response, next: NextFunction) => {
 });
 
 /**
+ * Second Phase Stub Out
+ *
  * TODO: implement endpoint
  */
 app.use(

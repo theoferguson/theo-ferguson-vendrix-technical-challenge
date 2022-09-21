@@ -40,9 +40,9 @@ To get you started, this repo was created to include two development environment
 
 - The "backend" folder contains a Node, Express, Redis template.
 
-###### You can initialize this repo following these steps:
+###### Steps to complete:
 
-**_VERY IMPORTANT_**
+**_IMPORTANT_**
 
 1. Ensure you have above packages installed
 2. Clone (do not fork) the repo: `git clone git@github.com:Vendrix-Inc/technical-challenge-2022.git`
@@ -116,23 +116,11 @@ In our Vendrix app, we handle a lot of data and events. In this stripped backend
 
 ### Objectives
 
-The goal of the second phase is to implement the missing endpoint as described in the [backend README](./backend/README.md)
+The goal of the second phase is to implement the missing endpoint as described in the [backend README](./backend/readme.md)
 
 <br>
 
 ---
-
-<br>
-
-# Submission
-
-**_! ATTENTION !_**
-
-- **_DO NOT_** host your project on a public repository.
-
-- Please follow the instructions provided in the invitation for submitting your work.
-
-- To significantly reduce the size of the upload, please remove the `/_node_modules_/`, `/.next/`, and `/build` folders.
 
 <br>
 
