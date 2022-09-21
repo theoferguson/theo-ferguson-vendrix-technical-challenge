@@ -1,5 +1,11 @@
 # 💳 Technical Challenge @ Backend
 
+##### Start Backend
+
+1. Open a terminal in the "backend" folder
+2. Install the dependencies for the "backend" folder: `yarn`
+3. Start the server: `yarn dev`
+
 This guide is an example of how to develop a function in Typescript with
 the Google Cloud Functions Framework with Debugging.
 

@@ -59,19 +59,6 @@ Your challenge is split into two phases:
 - In the **[first phase](#first-phase)**, your objective is to build a basic form to capture new user data.
 - In the **[second phase](#second-phase)**, your objective is complete an endpoint which returns data queried from a GraphQL API.
 
-##### Start Backend
-
-1. Open a terminal in the "backend" folder
-2. Install the dependencies for the "backend" folder: `yarn`
-3. Start the server: `yarn dev`
-
-##### Start Frontend
-
-1. Open a terminal in the "frontend" folder
-2. Install the dependencies for the "frontend" folder: `yarn`
-3. Start the client: `yarn dev`
-4. Open http://0.0.0.0:3000/
-
 ## First Phase
 
 ###### _~2 hours - The frontend_

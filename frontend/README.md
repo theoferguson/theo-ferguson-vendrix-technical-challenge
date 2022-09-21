@@ -1,5 +1,12 @@
 # 🧑‍💻 Technical Challenge @ Frontend
 
+##### Start Frontend
+
+1. Open a terminal in the "frontend" folder
+2. Install the dependencies for the "frontend" folder: `yarn`
+3. Start the client: `yarn dev`
+4. Open http://0.0.0.0:3000/
+
 The frontend challenge consists of a basic form to gather data for a new user. The tech stack used includes:
 
 - next
