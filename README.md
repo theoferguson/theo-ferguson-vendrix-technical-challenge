@@ -116,7 +116,7 @@ In our Vendrix app, we handle a lot of data and events. In this stripped backend
 
 ### Objectives
 
-The goal of the second phase is to implement the missing endpoint as described in the [backend README](./backend/README.md)
+The goal of the second phase is to implement the missing endpoint as described in the [backend README](./backend/readme.md)
 
 <br>
 
