@@ -10,7 +10,7 @@
 This guide is an example of how to develop a function in Typescript with
 the a basic node express server.
 
-The frontend challenge consists of a basic form to gather data for a new user. The tech stack used includes:
+The tech stack used includes:
 
 - node
 - express
@@ -18,11 +18,19 @@ The frontend challenge consists of a basic form to gather data for a new user. T
 
 ## Summary
 
-Add functionality to the express server so that a GET requests made to the route /card/:cardId (i.e./card/cd_392411ed344b112faa1e024f633516e4) returns basic payment card details.In order to implement this feature you will need to differentiate between the existing "users" functionality "/" and requests for cards details "/cards/:cardId". A query to the Highnote platform graphql API will be required, return the response from Highnote as a JSON value. You will need to implement a graphql client to fetch the information about the card. A query has been provided and is located int he graphql folder. This API utilizes a Basic API key that should be Base64 encoded and added to the "Authorization" header. The API key should be stored as an environmental variable and not committed to git. The API key will be shared with you via an email.
+Add functionality to the express server so that a GET requests made to the route /card/:cardId (i.e./card/cd_392411ed344b112faa1e024f633516e4) returns basic payment card details.
+
+In order to implement this feature you will need to differentiate between the existing "users" functionality "/" and requests for cards details "/cards/:cardId".
+
+A query to the Highnote platform graphql API will be required, return the response from Highnote as a JSON value. You will need to implement a graphql client to fetch the information about the card.
+
+A query has been provided and is located in the graphql folder. This API utilizes a Basic API key that should be Base64 encoded and added to the "Authorization" header.
+
+The API key should be stored as an environmental variable and not committed to git. The API key will be shared with you via an email.
 
 Use the following card Id to test your work: "cd_392411ed344b112faa1e024f633516e4"
 
-You can read more about the Highnote platform API at: https://highnoteplatform.com/docs
+_You can read more about the Highnote platform API at: https://highnoteplatform.com/docs_
 
 - [ ] Add logic to express server to determine when a card detail request is being made vs. user request (existing functionality)
 
