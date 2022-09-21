@@ -48,7 +48,7 @@ To get you started, this repo was created to include two development environment
 2. Clone (do not fork) the repo: `git clone git@github.com:Vendrix-Inc/technical-challenge-2022.git`
 3. Open the repo in VS Code
 4. Create your own public repo under your Github account with the name `${firstName}-${lastName}-vendrix-technical-challenge`
-5. Add your newly created git hub repository as a remote `git remote add origin https://github.com/user/repo.git`
+5. Add your newly created git hub repository as a remote `git remote set-url origin https://github.com/user/repo.git`
 6. Verify new remote is added `git remote -v`
    > origin https://github.com/user/repo.git (fetch)
    > origin https://github.com/user/repo.git (push)
