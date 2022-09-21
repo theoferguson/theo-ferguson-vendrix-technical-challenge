@@ -28,9 +28,11 @@ A query has been provided and is located in the graphql folder. This API utilize
 
 The API key should be stored as an environmental variable and not committed to git. The API key will be shared with you via an email.
 
-Use the following card Id to test your work: "cd_392411ed344b112faa1e024f633516e4"
+**Use the following card Id to test your work: "cd_392411ed344b112faa1e024f633516e4"**
 
 _You can read more about the Highnote platform API at: https://highnoteplatform.com/docs_
+
+## Task List
 
 - [ ] Add logic to express server to determine when a card detail request is being made vs. user request (existing functionality)
 
