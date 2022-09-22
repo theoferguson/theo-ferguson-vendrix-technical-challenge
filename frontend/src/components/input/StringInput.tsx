@@ -12,6 +12,7 @@ interface Props {
   defaultValue?: any;
   onChange?: (d?: any) => void;
   disabled?: boolean;
+  type?: string;
 }
 /**
  * @docs  "react-hook-form" Controller: https://react-hook-form.com/api/usecontroller/controller
@@ -26,6 +27,7 @@ export default function StringInput({
   defaultValue,
   onChange,
   disabled,
+  type,
 }: Props) {
   return (
     <Controller
@@ -42,6 +44,7 @@ export default function StringInput({
             label={label}
             error={Boolean(fieldState?.error)}
             helperText={fieldState?.error?.message}
+            type={type}
             onChange={(data) => {
               field.onChange(data);
               onChange && onChange();

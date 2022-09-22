@@ -99,14 +99,81 @@ export default function UserCreateUpdateForm({ user, onClose }: Props) {
         <Stack spacing={3} sx={{ p: 3, pb: 0 }}>
           <FormProvider {...formMethods}>
             <form
-              onSubmit={handleSubmit((data) => handleSave(data))}
+              onSubmit={handleSubmit((data) => {
+                handleSave(data)
+              })}
               className='form'
             >
               <Stack spacing={2}>
                 <StringInput
-                  fieldName='name.middleName'
-                  label='Middle Name'
+                  fieldName='name.givenName'
+                  label='Given Name'
                   control={control}
+                />
+              </Stack>
+              <Stack spacing={2}>
+                <StringInput
+                  fieldName='name.middleName'
+                  label='Middle Name (optional)'
+                  control={control}
+                />
+              </Stack>
+              <Stack spacing={2}>
+                <StringInput
+                  fieldName='name.familyName'
+                  label='Family Name'
+                  control={control}
+                />
+              </Stack>
+              <Stack spacing={2}>
+                <StringInput
+                  fieldName='name.suffix'
+                  label='Suffix (optional)'
+                  control={control}
+                />
+              </Stack>
+              <Stack spacing={2}>
+                <StringInput
+                  fieldName='name.title'
+                  label='Title (optional)'
+                  control={control}
+                />
+              </Stack>
+              <Stack spacing={2}>
+                <StringInput
+                  fieldName='role'
+                  label='Role'
+                  control={control}
+                />
+              </Stack>
+              <Stack spacing={2}>
+                <StringInput
+                  fieldName='email'
+                  label='Email'
+                  control={control}
+                />
+              </Stack>
+              <Stack spacing={2}>
+                <StringInput
+                  fieldName='phone'
+                  label='Phone (optional)'
+                  control={control}
+                />
+              </Stack>
+              <Stack spacing={2}>
+                <StringInput
+                  fieldName='password'
+                  label='New Password'
+                  control={control}
+                  type="password"
+                />
+              </Stack>
+              <Stack spacing={2}>
+                <StringInput
+                  fieldName='confirmPassword'
+                  label='Confirm Password'
+                  control={control}
+                  type="password"
                 />
               </Stack>
 

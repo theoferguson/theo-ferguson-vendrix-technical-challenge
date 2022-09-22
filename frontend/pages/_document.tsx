@@ -19,7 +19,7 @@ export default class MyDocument extends Document {
         <Head>
           <meta charSet='utf-8' />
           {/* PWA Config (manifest) */}
-          <link rel='manifest' href='/manifest.json' />
+          {/* <link rel='manifest' href='/manifest.json' /> */}
 
           {/* Theme color */}
           <meta name='theme-color' content={palette.light.primary.main} />
