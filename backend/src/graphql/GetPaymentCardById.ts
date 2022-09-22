@@ -1,4 +1,9 @@
-#Must Get Client Token
+import { gql } from "@apollo/client";
+
+// #Must Get Client Token
+
+
+export const GET_PAYMENT_CARD_BY_ID = gql`
 query GetPaymentCardById($paymentCardId: ID!) {
   node(id: $paymentCardId) {
     ... on PaymentCard {
@@ -86,4 +91,4 @@ query GetPaymentCardById($paymentCardId: ID!) {
       }
     }
   }
-}
+}`
