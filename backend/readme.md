@@ -34,10 +34,10 @@ _You can read more about the Highnote platform API at: https://highnoteplatform.
 
 ## Task List
 
-- [ ] Add logic to express server to determine when a card detail request is being made vs. user request (existing functionality)
+- [x] Add logic to express server to determine when a card detail request is being made vs. user request (existing functionality)
 
 - [ ] Query the Highnote API, and return the card details to the client
-
+   -stuck with bad credentials
 - [ ] Requests made to /cards/:cardId should return details about the card based on the ID provided
 
-- [ ] All other requests made to the endpoint should result in the existing function functionality
+- [x] All other requests made to the endpoint should result in the existing function functionality
