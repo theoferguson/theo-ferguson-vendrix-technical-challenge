@@ -132,34 +132,36 @@ Use the below checklist to help keep track of your completed work.
 
 ### Implementation
 
-- [ ] Review the codebase
-- [ ] Configure application in "next.config.js"
-- [ ] Configure schemas in "src/schemas/users.ts"
-- [ ] Add missing fields/inputs to the form
-- [ ] Ensure all input fields are being validated correctly per the "zod" schema
-- [ ] Submit valid data to the API
-- [ ] Style/rearrange the UserCreateUpdateForm component
-- [ ] Style/rearrange the UsersList component
+- [x] Review the codebase
+- [x] Configure application in "next.config.js"
+- [x] Configure schemas in "src/schemas/users.ts"
+- [x] Add missing fields/inputs to the form
+- [x] Ensure all input fields are being validated correctly per the "zod" schema
+- [x] Submit valid data to the API
+- [x] Style/rearrange the UserCreateUpdateForm component
+  -pretty minimal changes to get the title's not to overlap when clicking into an input
+- [x] Style/rearrange the UsersList component
+  -changed the list to a table for a header row
 
 <br>
 
 ### Written Portion
 
-- [ ] In your own words, how could this form be optimized? Think in terms of both performance and UI/UX.
+- [x] In your own words, how could this form be optimized? Think in terms of both performance and UI/UX.
 
-  > [YOUR RESPONSE]
+  > I think that the user input form could live in a modal so that there's a semi-clean display of the user list with a button to add more. Incorporating more of the company brand system into the theme colors (overriding most of the MUI default options) as well as having consistent sizing, border-radius options, Button appearances, etc. In terms of UX, it's not really clear who this form is for or why I'm seeing a list of all users (maybe this is unfair due to the assignment parameters). Having buttons that open up the optional fields instead of having so many empty fields would be a small improvement as well.
 
-- [ ] There is a way to optimize the "StringInput" component (src/components/input/StringInput.tsx) using a React feature. What React feature/s would you use to optimize the component and reduce rerenders?
+- [x] There is a way to optimize the "StringInput" component (src/components/input/StringInput.tsx) using a React feature. What React feature/s would you use to optimize the component and reduce rerenders?
 
-  > [YOUR RESPONSE]
+  > The StringInput component passes a LOT of props where the states are managed in the component and child-components. Managing more of the states internally in the component would reduce unnecessary re-renders. Instead of tracking all the values at a higher level, we can let the values be tracked in the component and only retreive them when the form is submitted. (this doesn't apply to all the fields, but there are a few repitiions and unecessary props being passed)
 
-- [ ] What STEM subject/research/product excites you most and why?
+- [x] What STEM subject/research/product excites you most and why?
 
-  > [YOUR RESPONSE]
+  > Having just had a bit of experience on an AI team, AI and ML products are definitely the most interesting current STEM topics to me. Constructing an "intelligent" computer program that can improve itself and provide valuable insights is something that will drive many innovations in the near future.
 
-- [ ] Any other thoughts?
+- [x] Any other thoughts?
 
-  > [YOUR RESPONSE]
+  > I just wanted to thank you both for constructing this assignment. I did find it difficult and although I spent more time than I wanted wrestling with new tools and libraries, I am able to say that I learned a lot and can take some insights with me moving forward. While I wasn't able to get the "cards/:card" endpoint working and I didn't spend much time on styling, I think that I've done enough to demonstrate my capabilities by working with a handful of new technologies.
 
   <br>
 
