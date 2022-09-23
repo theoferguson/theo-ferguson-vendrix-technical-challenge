@@ -15,6 +15,7 @@ import {
   Card,
   CardContent,
   Divider,
+  BottomNavigation,
 } from '@mui/material';
 import UserCreateUpdateForm from '../src/components/forms/UserCreateUpdateForm';
 import UsersList from '../src/components/lists/UsersList';
@@ -90,6 +91,11 @@ const Home: NextPage = () => {
             ) : null}
           </CardContent>
         </Card>
+
+        {/* BOTTOM NAVIGATION / BUFFER */}
+        <BottomNavigation>
+          
+        </BottomNavigation>
       </Stack>
     </Container>
   );

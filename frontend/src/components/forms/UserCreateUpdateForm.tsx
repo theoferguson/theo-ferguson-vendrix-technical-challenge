@@ -47,6 +47,9 @@ export default function UserCreateUpdateForm({ user, onClose }: Props) {
   /**
    * @docs  https://react-hook-form.com/api/useform/
    */
+
+  // STYLES
+  
   const formMethods = useForm<User>({
     mode: 'onTouched',
     resolver: zodResolver(user ? updateUserSchema : createUserSchema),
@@ -96,7 +99,7 @@ export default function UserCreateUpdateForm({ user, onClose }: Props) {
         </Typography>
       </Container>
       <Box>
-        <Stack spacing={3} sx={{ p: 3, pb: 0 }}>
+        <Stack spacing={3} sx={{ p: 2, pb: 0, justifyContent: 'center' }}>
           <FormProvider {...formMethods}>
             <form
               onSubmit={handleSubmit((data) => {
@@ -104,63 +107,63 @@ export default function UserCreateUpdateForm({ user, onClose }: Props) {
               })}
               className='form'
             >
-              <Stack spacing={2}>
+              <Stack spacing={2} sx={{ padding: .55 }}>
                 <StringInput
                   fieldName='name.givenName'
                   label='Given Name'
                   control={control}
                 />
               </Stack>
-              <Stack spacing={2}>
+              <Stack spacing={2} sx={{ padding: .55 }}>
                 <StringInput
                   fieldName='name.middleName'
                   label='Middle Name (optional)'
                   control={control}
                 />
               </Stack>
-              <Stack spacing={2}>
+              <Stack spacing={2} sx={{ padding: .55 }}>
                 <StringInput
                   fieldName='name.familyName'
                   label='Family Name'
                   control={control}
                 />
               </Stack>
-              <Stack spacing={2}>
+              <Stack spacing={2} sx={{ padding: .55 }}>
                 <StringInput
                   fieldName='name.suffix'
                   label='Suffix (optional)'
                   control={control}
                 />
               </Stack>
-              <Stack spacing={2}>
+              <Stack spacing={2} sx={{ padding: .55 }}>
                 <StringInput
                   fieldName='name.title'
                   label='Title (optional)'
                   control={control}
                 />
               </Stack>
-              <Stack spacing={2}>
+              <Stack spacing={2} sx={{ padding: .55 }}>
                 <StringInput
                   fieldName='role'
                   label='Role'
                   control={control}
                 />
               </Stack>
-              <Stack spacing={2}>
+              <Stack spacing={2} sx={{ padding: .55 }}>
                 <StringInput
                   fieldName='email'
                   label='Email'
                   control={control}
                 />
               </Stack>
-              <Stack spacing={2}>
+              <Stack spacing={2} sx={{ padding: .55 }}>
                 <StringInput
                   fieldName='phone'
                   label='Phone (optional)'
                   control={control}
                 />
               </Stack>
-              <Stack spacing={2}>
+              <Stack spacing={2} sx={{ padding: .55 }}>
                 <StringInput
                   fieldName='password'
                   label='New Password'
@@ -168,7 +171,7 @@ export default function UserCreateUpdateForm({ user, onClose }: Props) {
                   type="password"
                 />
               </Stack>
-              <Stack spacing={2}>
+              <Stack spacing={2} sx={{ padding: .55 }}>
                 <StringInput
                   fieldName='confirmPassword'
                   label='Confirm Password'

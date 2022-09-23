@@ -1,16 +1,17 @@
-import { styled } from '@mui/system';
 // Types/Interfaces
 import { User } from '../../schemas/users';
 // Components
 import {
+  Table,
   Box,
-  Card,
-  CardContent,
   Container,
-  Grid,
-  List,
-  ListItem,
+  TableContainer,
+  TableHead,
+  TableRow,
   Typography,
+  TableBody,
+  TableCell,
+  Paper,
 } from '@mui/material';
 // --------------------------------------------------------------
 // --------------------------------------------------------------
@@ -26,66 +27,28 @@ import {
  */
 
 // ***** Define styles ***** //
-const ListItemRootStyle = styled(Card)(({ theme }) => ({
-  width: '100%',
-  borderRadius: 0,
-  borderColor: theme.palette.common.black,
-}));
 
 // ----------------------------------------------------------------
 
 // ***** Define List Item ***** //
-interface UsersListItemProps {
+interface UserRowProps {
   user: User;
 }
-function UsersListItem({ user }: UsersListItemProps) {
+function UserRow({ user }: UserRowProps) {
   return (
-    <ListItemRootStyle>
-      <CardContent>
-        <Grid
-          container
-          key={user._id}
-          spacing={2}
-          justifyContent='center'
-          alignItems='center'
-        >
-          {/* Given Name */}
-          <Grid item lg={3}>
-            <Typography>{user.name.givenName}</Typography>
-          </Grid>
-
-          {/* Family Name */}
-          <Grid item lg={3}>
-            <Typography>{user.name.familyName}</Typography>
-          </Grid>
-
-          {/* Role */}
-          <Grid item lg={3}>
-            <Typography>{user.role}</Typography>
-          </Grid>
-
-          {/* Email */}
-          <Grid item lg={3}>
-            <Typography>{user.email}</Typography>
-          </Grid>
-        </Grid>
-      </CardContent>
-    </ListItemRootStyle>
+    <TableRow key={user.name.givenName} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
+      <TableCell component="th" scope="row">
+        {user.name.givenName}
+      </TableCell>
+      <TableCell>{user.name.familyName}</TableCell>
+      <TableCell>{user.role}</TableCell>
+      <TableCell align="center">{user.email}</TableCell>
+    </TableRow>
   );
 }
 
 // ----------------------------------------------------------------
-// ----------------------------------------------------------------
-
-// ***** Define styles ***** //
-const ListRootStyle = styled(List)(({ theme }) => ({
-  width: '100%',
-  bgcolor: 'background.paper',
-  position: 'relative',
-  '& ul': { padding: 0 },
-}));
-
-// ----------------------------------------------------------------
+// ---------------------------------------------------------------
 
 interface UsersListProps {
   users: User[];
@@ -99,11 +62,23 @@ export default function UsersList({ users }: UsersListProps) {
       </Container>
 
       {users.length ? (
-        <ListRootStyle>
-          {users.map((user) => (
-            <ListItem key={user._id} children={<UsersListItem user={user} />} />
-          ))}
-        </ListRootStyle>
+        <TableContainer component={Paper}>
+          <Table sx={{ minWidth: 500 }} aria-label="user table">
+            <TableHead>
+              <TableRow>
+                <TableCell>First Name</TableCell>
+                <TableCell>Last Name</TableCell>
+                <TableCell>Role</TableCell>
+                <TableCell align="center">Email</TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {users.map((user) => (
+                <UserRow user={user} />
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
       ) : (
         <Typography>{'No users'}</Typography>
       )}
