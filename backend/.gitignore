@@ -38,3 +38,5 @@ build/**/*
 
 # ignore yarn.lock
 yarn.lock
+
+# highnote api key
